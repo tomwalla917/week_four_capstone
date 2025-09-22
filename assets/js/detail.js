@@ -26,3 +26,22 @@ window.addEventListener('load', function(){
 
 
 
+const selectItem = document.getElementById('item');
+const list = window.getElementById('selectedItemList');
+console.log('list element found', list); //debugging to see if i am locating list in DOM 
+
+selectItem.addEventListener('change', function (e){
+    console.log('Event change triggered'); //debug to see if this event is called
+    const selectedValue = e.target.value;
+    const selectedText = e.target.options[e.target.selectedIndex].text;
+
+    if (selectedValue && selectedValue != ""){
+        console.log('Creating list item'); // debug 
+        const listItem = document.createElement('li');
+        listItem.textContent = selectedText;
+        console.log('appending to list') //debug
+        list.appendChild;
+
+        selectedItem.selectedIndex =0;
+    }
+})

@@ -157,3 +157,17 @@ button:hover {
   font-size: 1em;
   margin-bottom: 4px;
 }
+
+#selectedItemList {
+  background: #ffcc02;
+  color: #232323;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00000033;
+  margin: 32px auto 0 auto;
+  max-width: 340px;
+  padding: 18px 18px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
